@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.shxt.syt_supermarket.core.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.shxt.syt_supermarket.core.Perspective"
+            id="syt_supermarket.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.shxt.syt_supermarket.view.ManagerView"
+            id="com.shxt.syt_supermarket.view.ManagerView"
+            name="管理员">
+      </view>
+      <view
+            class="com.shxt.syt_supermarket.view.GeneralView"
+            id="com.shxt.syt_supermarket.view.GeneralView"
+            name="收银台">
+      </view>
+      <view
+            class="com.shxt.syt_supermarket.editor.PurchaseSearch"
+            id="com.shxt.syt_supermarket.editor.PurchaseSearch"
+            name="New ViewPart">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.shxt.syt_supermarket.editor.UpDownEditor"
+            id="com.shxt.syt_supermarket.editor.MyEditor"
+            name="商品上下架">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.InfoEditor"
+            id="com.shxt.syt_supermarket.editor.InfoEditor"
+            name="商品信息管理">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.VipEditor"
+            id="com.shxt.syt_supermarket.editor.VipEditor"
+            name="vip">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.ProfitSearch"
+            id="com.shxt.syt_supermarket.editor.ProfitSearch"
+            name="利润查询">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.EntrySearch"
+            id="com.shxt.syt_supermarket.editor.EntrySearch"
+            name="入账记录">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.PurchaseSearch"
+            id="com.shxt.syt_supermarket.editor.PurchaseSearch"
+            name="进货明细">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.UserManagement"
+            id="com.shxt.syt_supermarket.editor.UserManagement"
+            name="用户管理">
+      </editor>
+      <editor
+            class="com.shxt.syt_supermarket.editor.HelloEditor"
+            id="com.shxt.syt_supermarket.editor.HelloEditor"
+            name="欢迎">
+      </editor>
+   </extension>
+
+</plugin>
